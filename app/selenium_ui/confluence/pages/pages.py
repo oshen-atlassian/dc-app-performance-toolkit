@@ -121,6 +121,13 @@ class Editor(BasePage):
                         f"tinymce.appendChild(tag_p)")
         self.return_to_parent_frame()
 
+    def hard_set_tinymce_html(self, html=None):
+        self.wait_until_available_to_switch(EditorLocators.page_content_field)
+        html = self.generate_random_string(30) if not html else html
+        self.execute_js(f"tinymce=document.getElementById('tinymce'); "
+                        f"tinymce.innerHTML = '{html}';")
+        self.return_to_parent_frame()
+
     def click_submit(self):
         self.get_element(EditorLocators.publish_button).click()
 
