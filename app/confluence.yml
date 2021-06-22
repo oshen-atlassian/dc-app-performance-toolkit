@@ -4,7 +4,7 @@ settings:
   aggregator: consolidator
   verbose: false
   env:
-    application_hostname: oshen-loadb-1u06toxjshew6-1895999640.us-west-2.elb.amazonaws.com  # Confluence DC hostname without protocol and port e.g. test-confluence.atlassian.com or localhost
+    application_hostname: oshen-loadb-1nh426a7rrw4a-113855913.us-west-2.elb.amazonaws.com  # Confluence DC hostname without protocol and port e.g. test-confluence.atlassian.com or localhost
     application_protocol: http      # http or https
     application_port: 80          # 80, 443, 8080, 1990, etc
     secure: True                    # Set False to allow insecure connections, e.g. when using self-signed SSL certificate
